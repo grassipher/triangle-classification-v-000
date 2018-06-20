@@ -17,6 +17,12 @@ class Triangle
     end
   end
   
+  def valid?
+    if @side1 <= 0 || @side2 <= 0 || @side3 <=0
+      return false
+    elsif (@side1 + @side2) <= @side3
+  end
+  
   class TriangleError < StandardError
     def message
       puts "That is not a valid triangle."
