@@ -1,3 +1,4 @@
+require 'pry'
 class Triangle
   # write code here
   
@@ -8,6 +9,7 @@ class Triangle
   end
   
   def kind
+    binding.pry
     if valid? == false
       begin
         raise TriangleError
