@@ -3,7 +3,7 @@ class Triangle
   
   class TriangleError < StandardError
     def message
-      puts "That is not a valid triangle"
+      puts "That is not a valid triangle."
     end
   end
 end
